@@ -1,9 +1,15 @@
 header{
-    background-color: #003399;
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     flex-wrap: wrap;
+}
+
+.img-header img{
+    max-height: 3em;
+  margin-right: 6px;
+  
 }
 
 .nav-header ul{
@@ -16,10 +22,11 @@ header{
 }
 
 .nav-header ul li a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.5em;
-    font-weight: bolder;
+    font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #013289;
+  text-decoration: none;
 }
 
 body{
