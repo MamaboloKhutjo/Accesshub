@@ -69,38 +69,4 @@ main h1{
     text-align: center;
     font-family: "Nunito", sans-serif;
     color: rgb(0, 0, 0);
-
 }
-
-footer{
-    background-color: #ffffff ;
-    display: flex;
-    justify-content: center;
-}
-
-.nav-footer ul{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    list-style: none;
-    align-items: center;
-}
-
-.nav-footer  li{
-    margin: 0 15px;
-}
-
-.nav-footer ul li a{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-family: "Nunito", sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    color: #013289;
-    text-decoration: none;
-}
-
-.nav-footer a:hover{
-    color: #0758e4;
- }
