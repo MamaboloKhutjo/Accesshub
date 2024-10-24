@@ -1,160 +1,178 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Login</title>
-        <link rel="stylesheet" href="Styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&family=Silkscreen:wght@400;700&display=swap"
-            rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
-    </head>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
 
 
-    <body >
-        <header>
-            <div class="img-header">
-                <a href="https://www.spoilerinterface.com">
-                    <img src="images/main_logo.png" alt="This is the logo for spoilerinterface">
-                </a>
-            </div>
-        
-            <div class="nav-header">
-                <ul>
-                    <li>
-                        <a href="https://www.spoilerinterface.com">
-                            Home
-                        </a>
-                    </li>
-        
-                    <li>
-                        <a href="https://www.spoilerinterface.com/#services">
-                            Services
-                        </a>
-                    </li>
-        
-                    <li>
-                        <a href="https://www.spoilerinterface.com/#features">
-                            Features
-                        </a>
-                    </li>
-        
-                    <li>
-                        <a href="https://www.spoilerinterface.com/docs/">
-                            Docs
-                        </a>
-                    </li>
-        
-                    <li>
-                        <a href="https://www.spoilerinterface.com/#contact">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        
-        </header>
-        
-        <main >
-            <div class="h-screen w-screen flex justify-center items-center dark:bg-gray-900">
+<body>
+    <header>
+        <div class="img-header">
+            <a href="https://www.spoilerinterface.com">
+                <img src="images/main_logo.png" alt="This is the logo for spoilerinterface">
+            </a>
+        </div>
+
+        <div class="nav-header">
+            <ul>
+                <li>
+                    <a href="https://www.spoilerinterface.com">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.spoilerinterface.com/#services">
+                        Services
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.spoilerinterface.com/#features">
+                        Features
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.spoilerinterface.com/docs/">
+                        Docs
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.spoilerinterface.com/#contact">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="container" id="Signup">
+            <h1 class="form-title">
+                Sign Up
+            </h1>
+
+            <form  method="post" action="">
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <label for="fName"> First Name</label>
+                    <input type="text" name="fName" id="fName" placeholder="First Name" required>
+                </div>
+
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <label for="fName"> Last Name</label>
+                    <input type="text" name="lName" id="lName" placeholder="Last Name" required>
                     
-                        <div
-                            class="border-[20px] border-transparent rounded-[20px] dark:bg-gray-900 bg-white shadow-lg xl:p-10 2xl:p-10 lg:p-10 md:p-10 sm:p-2 m-2">
-                            <h1 class="pt-8 pb-6 font-bold dark:text-gray-400 text-5xl text-center cursor-default">
-                                Login
-                            </h1>
-        
-                            <form >
-                                <div>
-                                    <label for="email" class="mb-2 ">
-                                        Email
-                                    </label>
+                </div>
 
-                                    <input id="email" class="email" type="email" placeholder="Email" required />
-                                </div>
-                                <div>
-                                    <label for="password" class="mb-2">Password</label>
-                                    <input id="password" class="password" type="password" placeholder="Password" required />
-                                </div>
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <label for="fName"> Cellphone</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Enter Phone Number" required>
+                </div>
+    
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <label for="fName"> Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    
+                </div>
+    
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <label for="fName"> Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter Password" required>  
+                </div>
 
-                                <button class="button" type="submit">
-                                    LOG IN
-                                </button>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <label for="fName"> Confirm Password</label>
+                    <input type="password" name="password" id="password" placeholder="Confirm Password" required>  
+                </div>
 
-                                <a class="sign-in" href="#">
-                                        Forget your password?
-                                </a>
-                            </form>
+                <input type="submit" class="button" value="Sign up" name="Sign Up">
 
-                            <p>
-                                Or login with: 
-                            </p>
+                <p class="or">
+                    Or Sign Up with
+                </p>
+    
+                <div class="icons">
+                    <i class="fa-brands fa-google"></i>
+                    <i class="fa-brands fa-apple"></i>
+                </div>
+    
+                <div class="links">
+                    <p> Already have Account?</p>
+                    <button id="SignInButton"> Sign In</button>
+                </div>
+    
+                <div class="terms">
+                    <p>
+                        By signing up, you Agree to the <span><a href="#"> Terms and Conditions</a></span>
+                    </p>
+                </div>
+            </form>
 
-                            <!-- Third Party Authentication Options -->
-                            <div class="items">
-                                <button href="#" class="hover:scale-105 ease-in-out duration-300 shadow-lg p-2 rounded-lg m-1">
-                                    <img class="max-w-[25px]" src="https://ucarecdn.com/8f25a2ba-bdcf-4ff1-b596-088f330416ef/"
-                                        alt="Google" />
-                                </button>
-                                <button href="#" class="hover:scale-105 ease-in-out duration-300 shadow-lg p-2 rounded-lg m-1">
-                                    <img class="max-w-[25px] filter dark:invert"
-                                        src="https://ucarecdn.com/be5b0ffd-85e8-4639-83a6-5162dfa15a16/" alt="Github" />
-                                </button>
-                                <button href="#" class="hover:scale-105 ease-in-out duration-300 shadow-lg p-2 rounded-lg m-1">
-                                    <img class="max-w-[25px]" src="https://ucarecdn.com/6f56c0f1-c9c0-4d72-b44d-51a79ff38ea9/"
-                                        alt="Facebook" />
-                                </button>
-                                <button href="#" class="hover:scale-105 ease-in-out duration-300 shadow-lg p-2 rounded-lg m-1">
-                                    <img class="max-w-[25px] dark:gray-100"
-                                        src="https://ucarecdn.com/82d7ca0a-c380-44c4-ba24-658723e2ab07/" alt="twitter" />
-                                </button>
-        
-                                <button href="#" class="hover:scale-105 ease-in-out duration-300 shadow-lg p-2 rounded-lg m-1">
-                                    <img class="max-w-[25px]" src="https://ucarecdn.com/3277d952-8e21-4aad-a2b7-d484dad531fb/"
-                                        alt="apple" />
-                                </button>
-                            </div>
+            
+            
+        </div>
+    
+        <div class="container" id="Signup">
+            <h1 class="form-title">
+                Login
+            </h1>
 
-                            <div class="flex flex-col mt-4 items-center justify-center text-sm">
-                                <h3 class="dark:text-gray-300">
-                                    Don't have an account?
-                                    <a  href="sign in.html">
-                                            Sign Up 
-                                    </a>
-                                </h3>
-                            </div>
-
-                            
-        
-                            <div >
-                                <p class="cursor-default">
-                                    By signing in, you agree to our
-                                    <a class="group text-blue-400 transition-all duration-100 ease-in-out" href="#">
-                                        <span
-                                            class="cursor-pointer bg-left-bottom bg-gradient-to-r from-blue-400 to-blue-400 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
-                                            Terms
-                                        </span>
-                                    </a>
-                                    and
-                                    <a class="group text-blue-400 transition-all duration-100 ease-in-out" href="#">
-                                        <span
-                                            class="cursor-pointer bg-left-bottom bg-gradient-to-r from-blue-400 to-blue-400 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
-                                            Privacy Policy
-                                        </span>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-        </main>
+            <form method="post" action="">
 
 
-        
-    </body>
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <label for="fName"> Email</label>
+                </div>
+
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="password" id="password" placeholder="password" required>
+                    <label for="fName"> pasword</label>
+                </div>
+
+                <input type="submit" class="button" value="Sign In" name="Sign In">
+
+                <div class="recover">
+                    <a href="#"> Forgot pasword</a>
+                </div>
+            </form>
+
+                <p class="or">
+                    -------------OR---------------
+                </p>
+
+                <div class="icons">
+                    <i class="fa-brands fa-google"></i>
+                    <i class="fa-brands fa-apple"></i>
+                </div>
+
+                <div class="links">
+                    <p> Don't have Account?</p>
+                    <button id="SignUpButton"> Sign Up</button>
+                </div>
+            
+        </div>
+    </main>
+
+
+
+</body>
+
 </html>

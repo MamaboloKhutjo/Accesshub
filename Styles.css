@@ -1,72 +1,94 @@
-header{
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif
+}
+
+header {
     background-color: #FFFFFF;
     display: flex;
     justify-content: space-around;
     align-items: center;
     border-radius: 0.5em;
-   
+
 }
 
-.img-header img{
+.img-header img {
     max-height: 2.5em;
-  margin-right: 6px;
-  
+    margin-right: 6px;
+
 }
-.nav-header{
+
+.nav-header {
     padding: 1.3em;
 }
 
-.nav-header ul{
+.nav-header ul {
     margin: 0;
-  padding: 0;
-  display: flex;
-  list-style: none;
-  align-items: center;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
 }
 
-.nav-header li{
+.nav-header li {
     margin: 0 15px;
 }
 
-.nav-header  a {
+.nav-header a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: "Nunito", sans-serif;
+
     font-size: 16px;
     font-weight: 700;
     color: #013289;
     text-decoration: none;
 }
 
-.nav-header a:hover{
-   color: #0758e4;
+.nav-header a:hover {
+    color: #0758e4;
 }
 
-body{
+body {
     background-color: #ffffff;
 }
 
-main{
-    padding: 20px;
-    max-width: 400px;
-    margin: 20px auto;
-  
-    border-radius: 8px;
-    font-family: "Nunito", sans-serif;
-}
-.person{
-    display: flex;
-    justify-content:center;
+.container{
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(240, 240, 240) , rgb(241, 241, 241), #fff);
+    width: 450px;
+   padding: 1.5rem; 
+   margin: 50px auto;
+   border-radius: 10%;
 }
 
-.person img{
-    width: 15em;
-    object-fit: contain;
+form{
+   margin: 0 2rem;
 }
 
-main h1{
+.terms a{
+    text-decoration: none;
+    color: rgb(0, 99, 247);
+}
+
+.form-title{
+    font-size: 1.5rem;
+    font-weight: bolder;
     text-align: center;
-    font-family: "Nunito", sans-serif;
-    color: rgb(0, 0, 0);
+    padding: 1.3rem;
+    margin-bottom: 0.4rem;
+  
+}
+.input-group{
+    padding: 1% 0;
+}
+
+.input-group input{
+    color: inherit;
+    width: 100%;
+    background-color: transparent;
+}
+
+.input-group i{
+    color: black;
 }
