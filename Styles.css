@@ -163,8 +163,43 @@ padding: 0.5rem;
     color: rgb(0, 99, 247);
 }
 
-@media (max-width: 600px) {
-    .container {
-        width: 90%; /* Make it wider on small screens */
+@media (max-width: 992px) {
+    header {
+        padding: 1rem; /* Add padding for mobile view */
+    }
+
+    .nav-header {
+        display: none; /* Hide navigation by default on small screens */
+        flex-direction: column; /* Stack nav items vertically */
+        width: 100%; /* Full width */
+        position: absolute; /* Position absolutely to overlay */
+        top: 60px; /* Adjust based on your header height */
+        left: 0; /* Align to left */
+        background: white; /* Background for the dropdown */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for dropdown */
+        z-index: 1000; /* Keep it above other elements */
+        opacity: 0; /* Initially hidden */
+        transition: opacity 0.3s ease; /* Transition for smoothness */
+        pointer-events: none; /* Prevent interaction when hidden */
+    }
+
+    .nav-header.active {
+        display: flex; /* Show when active */
+        opacity: 1; /* Fully visible */
+        pointer-events: auto; /* Allow interaction */
+    }
+
+    .nav-toggle {
+        display: block; /* Show the toggle button on small screens */
+    }
+
+    .nav-header li {
+        margin: 0.5rem 0; /* Space between items when stacked */
+    }
+
+    .nav-header a {
+        text-align: center; /* Center text in dropdown */
+        display: block; /* Block display for full-width clickable area */
+        width: 100%; /* Full width for mobile items */
     }
 }
