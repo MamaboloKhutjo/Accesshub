@@ -67,11 +67,12 @@ body {
 }
 
 .container{
-   
-    width: 500px;
-   padding: 1.5rem; 
-   margin: 50px auto;
+    width: 90%; /* Change width to 90% to fit better on smaller screens */
+    max-width: 600px; /* Adjust max-width for larger screens */
+    padding: 1rem; /* Reduce padding for mobile */
+    margin: 20px auto; /* Adjust margin for better spacing */
    border-radius: 10%;
+};
 }
 
 form{
