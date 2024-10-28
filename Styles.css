@@ -67,16 +67,15 @@ body {
 }
 
 .container{
-   
-    width: 500px;
-   padding: 1.5rem; 
-   margin: 50px auto;
+    width: 90%; /* Change width to 90% to fit better on smaller screens */
+    max-width: 600px; /* Adjust max-width for larger screens */
+    padding: 1rem; /* Reduce padding for mobile */
+    margin: 20px auto; /* Adjust margin for better spacing */
    border-radius: 10%;
 }
 
 form{
-   margin: 0 2rem;
-   
+   margin: 0 1rem; /* Reduce margin for better fit on small screens */
 }
 
 .form-title{
@@ -91,12 +90,14 @@ form{
     padding: 1% 0;
     display: flex; 
     justify-content: space-between; 
-    align-items: center;
+    flex-direction: column; /* Stack inputs vertically on small screens */
+    align-items: stretch; /* Stretch inputs to full width */
 }
 
 .input-group label {
     margin-right: 1rem; 
     flex-basis: 30%; /* Give label a fixed width */
+    margin-bottom: 0.5rem; /* Space between label and input */
 }
 
 .input-group input{
@@ -110,17 +111,18 @@ form{
 .input-button{
 text-align: center;
 padding: 0.5rem;
+padding: 1rem; /* Increase padding for better touch targets */
 }
 
 .button{
     width: 100%; 
-    padding: 0.5rem; 
     border-radius: 5px; 
     font-weight: bold;
     border: none;
     background-color: #0758e4;
     color: #FFFFFF;
-    font-size: 1.3rem;
+    padding: 0.75rem; /* Increase padding for better touch targets */
+    font-size: 1.2rem; /* Adjust font size for better readability */
 }
 
 .button:hover {
@@ -129,9 +131,9 @@ padding: 0.5rem;
 }
 
 .alt{
-    font-size: 1.5rem;
     text-align: center;
     color: rgb(0, 99, 247);
+    font-size: 1.2rem; /* Adjust font size for smaller devices */
 }
 
 .icons {
