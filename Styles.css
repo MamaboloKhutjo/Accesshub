@@ -19,6 +19,15 @@ header {
 
 }
 
+.nav-toggle {
+    display: none; /* Hidden by default, shown on mobile */
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #013289;
+    cursor: pointer;
+}
+
 .nav-header {
     padding: 1.3em;
 }
@@ -165,21 +174,21 @@ padding: 0.5rem;
 
 @media (max-width: 992px) {
     header {
-        padding: 1rem; /* Add padding for mobile view */
+        padding: 0.5rem; 
     }
 
     .nav-header {
-        display: none; /* Hide navigation by default on small screens */
-        flex-direction: column; /* Stack nav items vertically */
-        width: 100%; /* Full width */
-        position: absolute; /* Position absolutely to overlay */
-        top: 60px; /* Adjust based on your header height */
-        left: 0; /* Align to left */
-        background: white; /* Background for the dropdown */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for dropdown */
+        display: none; 
+        flex-direction: column; 
+        width: 50%; 
+        position: absolute; 
+        top: 60px; 
+        right: 0; 
+        background: white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
         z-index: 1000; /* Keep it above other elements */
         opacity: 0; /* Initially hidden */
-        transition: opacity 0.3s ease; /* Transition for smoothness */
+        transition: opacity 0.3s ease; 
         pointer-events: none; /* Prevent interaction when hidden */
     }
 
@@ -190,16 +199,22 @@ padding: 0.5rem;
     }
 
     .nav-toggle {
-        display: block; /* Show the toggle button on small screens */
+        display: block; 
+    }
+
+    .nav-header ul {
+        flex-direction: column; 
+        padding: 0; 
+        width: 100%; 
     }
 
     .nav-header li {
-        margin: 0.5rem 0; /* Space between items when stacked */
+        margin: 0; 
     }
 
     .nav-header a {
-        text-align: center; /* Center text in dropdown */
-        display: block; /* Block display for full-width clickable area */
-        width: 100%; /* Full width for mobile items */
+        text-align: left; 
+        display: block; 
+        padding: 15px; 
     }
 }
