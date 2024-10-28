@@ -72,6 +72,7 @@ body {
     padding: 1rem; /* Reduce padding for mobile */
     margin: 20px auto; /* Adjust margin for better spacing */
    border-radius: 10%;
+   
 }
 
 form{
@@ -104,8 +105,9 @@ form{
     color: inherit;
     flex-grow: 1; /* Allow input to grow and fill remaining space */
     padding: 0.5rem; 
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .input-button{
