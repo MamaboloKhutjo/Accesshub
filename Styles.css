@@ -168,10 +168,26 @@ padding: 1rem; /* Increase padding for better touch targets */
     height: 32px;
 }
 
-.links a{
+.links{
+    display: flex;
+    padding: 0 4rem;
+    margin-top: 0.9rem;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.buttons{
+    margin-left: 1rem;
     color: rgb(0, 99, 247);
-    font-size: 1.3rem;
-    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.buttons:hover{
+    color: #064b9e; /* Darker shade on hover */
+    cursor: pointer; /* Change cursor to pointer */
 }
 
 .terms a{
