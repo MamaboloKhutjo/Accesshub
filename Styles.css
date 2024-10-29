@@ -130,6 +130,10 @@ body.dark-mode {
     --button-bg: transparent;
 }
 
+body.dark-mode .nav-header a {
+    color: #ffffff; /* White text in dark mode */
+}
+
 .container{
     width: 90%; /* Change width to 90% to fit better on smaller screens */
     max-width: 600px; /* Adjust max-width for larger screens */
