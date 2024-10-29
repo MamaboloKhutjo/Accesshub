@@ -21,3 +21,10 @@ const navHeader = document.querySelector('.nav-header');
 navToggle.addEventListener('click', () => {
     navHeader.classList.toggle('active'); 
 });
+
+
+
+const themeToggle = document.querySelector('.theme-toggle');
+themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+});

@@ -10,7 +10,15 @@ header {
     justify-content: space-around;
     align-items: center;
     border-radius: 0.5em;
+    background-color: var(--header-bg);
+}
 
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --header-bg: #FFFFFF;
+    --button-bg: transparent;
+    
 }
 
 .img-header img {
@@ -64,6 +72,63 @@ body {
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
     overflow-x: hidden; /* Prevent horizontal scrolling */
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+body.dark-mode {
+    --bg-color: #1c1c1c;
+    --text-color: #eaeaea;
+    --header-bg: #333333;
+    --button-bg: transparent;
+}
+
+display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f0f0f0; /* Light background initially */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    position: relative;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1); /* Slight enlargement on hover */
+}
+
+/* Light and Dark Mode Icons */
+.theme-toggle .light-mode-icon,
+.theme-toggle .dark-mode-icon {
+    font-size: 20px;
+    color: #333;
+    transition: opacity 0.3s;
+    position: absolute;
+}
+
+/* Default - Show light mode icon and hide dark mode icon */
+.light-mode-icon {
+    opacity: 1;
+}
+
+.dark-mode-icon {
+    opacity: 0;
+}
+
+/* Dark Mode Active State */
+body.dark-mode .theme-toggle {
+    background-color: #333; /* Dark background */
+}
+
+body.dark-mode .theme-toggle .light-mode-icon {
+    opacity: 0;
+}
+
+body.dark-mode .theme-toggle .dark-mode-icon {
+    opacity: 1;
+    color: #fff; /* White color for better contrast in dark mode */
 }
 
 .container{
