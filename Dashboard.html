@@ -2,87 +2,150 @@
 
 <html>
     <head>
-        <title>Welcome</title>
-        <link rel="stylesheet" href="Styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin</title>
+        <link rel="stylesheet" href="dashcss.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+        <link href="images/main_logo.png" rel="icon">
     </head>
 
-
     <body>
-        <header>
-            <img src="" alt="This is the logo for company" >
-            
+        <div class="dashboard">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+              <div class="sidebar-header">
+                <h2>Admin Panel</h2>
+              </div>
+              <ul>
 
-            <div class="nav-header">
-                <ul>
-                    <li>
-                        <a href="">
-                            Home
-                        </a>
-                    </li>
+                <li>
+                    <a href="Dashboard.html">
+                        <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/home.png" alt="home"/>
+                        Dashboard
+                    </a>
+                </li>
 
-                    <li>
-                       <a href="">
-                            About Us
-                       </a> 
-                    </li>
+                <li>
+                    <a href="#">
+                        <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/imac-settings.png" alt="imac-settings"/>
+                        System view
+                    </a>
+                </li>
 
-                    <li>
-                        <a href="">
-                            Services
-                        </a>
-                    </li>
+                <li>
+                    <a href="#">
+                        <img width="20" height="20" src="https://img.icons8.com/ios-glyphs/20/marker--v1.png" alt="marker--v1"/>
+                        Ping
+                    </a>
+                </li>
 
-                    <li>
-                        <a href="">
-                            Dashboard
-                        </a>
-                    </li>
-                </ul>
-            </div>
-           
-        </header>
+                <li>
+                    <a href="#">
+                        <img width="20" height="20" src="https://img.icons8.com/ios-glyphs/20/toggle-on--v1.png" alt="toggle-on--v1"/>
+                        Switches
+                    </a>
+                </li>
 
-        <hr>
+                <li>
+                    <a href="#">
+                        <img width="20" height="20" src="https://img.icons8.com/android/20/rfid-signal.png" alt="rfid-signal"/>
+                        Sensors
+                    </a>
+                </li>
 
-        <main>    
-           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quidem odit, autem qui eum iusto ea sit quo! Magnam ipsum dolor magni voluptatibus, molestias placeat tenetur. Consequuntur consequatur quas quae.
+                <li>
+                    <a href="#">
+                        <img width="20" height="20" src="https://img.icons8.com/ios-filled/20/office.png" alt="office"/>
+                        Workstations
+                    </a>
+                </li>
 
-        </main>
+                <li>
+                    <a href="#">
+                        <img width="20" height="20" src="https://img.icons8.com/ios-filled/20/worldwide-location--v1.png" alt="worldwide-location--v1"/>
+                        GPS
+                    </a>
+                </li>
 
-        <hr>
+                <li>
+                    <a href="#">
+                        <img width="20" height="20" src="https://img.icons8.com/sf-regular-filled/20/temperature.png" alt="temperature"/>
+                        Meteorological
+                    </a>
+                </li>
 
-        <footer>
-           
-            <div class="nav-footer">
-                <ul>
-                    <li>
-                        <a href="index.html">
-                            Home
-                        </a>
-                    </li>
+                <li>
+                    <a href="#">
+                        <img width="20" height="20" src="https://img.icons8.com/ios-glyphs/20/full-battery.png" alt="full-battery"/>
+                        Battery Monitor
+                    </a>
+                </li>
 
-                    <li>
-                       <a href="">
-                            About Us
-                       </a> 
-                    </li>
+                <li>
+                    <a href="#">
+                        <img width="20" height="20" src="https://img.icons8.com/ios-filled/20/appointment-reminders--v1.png" alt="appointment-reminders--v1"/>
+                        Notifications
+                    </a>
+                </li>
 
-                    <li>
-                        <a href="">
-                            Services
-                        </a>
-                    </li>
+                <li>
+                    <a href="#">
+                        <img width="20" height="20" src="https://img.icons8.com/ios-glyphs/20/person-male.png" alt="person-male"/>
+                        Profile
+                    </a>
+                </li>
 
-                    <li>
-                        <a href="">
-                            Dashboard
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
+              </ul>
+            </aside>
+        
+            <!-- Main Content -->
+            <main class="main-content">
+              <header>
+                <h1 id="welcome-message">Welcome,</h1>
+                <p>Overview of your system performance.</p>
+              </header>
+        
+              <!-- Analytics Section -->
+              <section class="analytics bento-grid">
+                <div class="card large">
+                  <h3>Sensors</h3>
+                </div>
+                
+                <div class="card small">
+                  <h3>Switches</h3>
+                </div>
+                
+                <div class="card medium">
+                  <h3>Workstations</h3>
+                </div>
+                
+                <div class="card medium">
+                  <h3>GPS</h3>
+                </div>
+                
+                <div class="card large">
+                  <h3>Meteorological</h3>
+                </div>
+                
+                <div class="card small">
+                  <h3>Battery Monitors</h3>
+                </div>
+                
+                <div class="card medium">
+                  <h3>Ping</h3>
+                </div>
+              </section>
+        <br>
+              <!-- Chart Section -->
+              <section class="logs">
+                <canvas id="log-chart"></canvas>
+              </section>
+            </main>
+          </div>
+
+          <script src="script.js"></script>
     </body>
+        
 </html>
