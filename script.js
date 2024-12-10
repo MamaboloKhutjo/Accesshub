@@ -28,10 +28,3 @@ const themeToggle = document.querySelector('.theme-toggle');
 themeToggle.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
 });
-
-// Simulated user data
-const userName = "Khutjo"; // Replace this with the actual user data source
-
-// Inject the user's name into the welcome message
-const welcomeMessage = document.getElementById('welcome-message');
-welcomeMessage.textContent = `Welcome, ${userName}`;
