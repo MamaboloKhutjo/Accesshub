@@ -236,6 +236,13 @@ padding: 1rem; /* Increase padding for better touch targets */
     height: 32px;
 }
 
+.form-image {
+    float:right ; 
+    max-width: 50%; 
+    margin-left: -500px;
+    height: auto; 
+}
+
 .links{
     display: flex;
     padding: 0 4rem;
@@ -284,6 +291,10 @@ padding: 1rem; /* Increase padding for better touch targets */
         pointer-events: none; /* Prevent interaction when hidden */
         padding: 0; /* Remove padding */
 
+    }
+
+    .form-image{
+        display: none;
     }
 
     .nav-header.active {
