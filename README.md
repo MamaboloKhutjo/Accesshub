@@ -41,8 +41,10 @@ A fully responsive and modern Admin Dashboard website featuring a login system a
 ![dark mode](https://github.com/user-attachments/assets/cdf31aa3-4c0f-49e5-96ff-bb49b62899c3)
 
 
-### Dashboard
-![admin](https://github.com/user-attachments/assets/111e36ac-9df1-4fc1-abf5-9a2180497f4c)
+### Dashboard [Light Mode and Dark Mode]
+![Light Mode](https://github.com/user-attachments/assets/76739da4-7439-4425-bdc5-402ed4e0c329)
+![Dark Mode](https://github.com/user-attachments/assets/0e31ea28-d140-4745-be92-e4ca0c10e798)
+
 
 
 ---
