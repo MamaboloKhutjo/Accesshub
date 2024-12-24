@@ -103,17 +103,24 @@
             <!-- Main Content -->
             <main class="main-content">
               <header>
-                <h1 id="welcome-message">Welcome,</h1>
-                <p>Overview of your system performance.</p>
+
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme"><div class="theme-toggle">
+                  <i class="fas fa-sun light-mode-icon"></i>
+                  <i class="fas fa-moon dark-mode-icon"></i>
+              </div>
+            </button>
+
               </header>
+
+              <br>
         
               <!-- Analytics Section -->
               <section class="analytics bento-grid">
-                <div class="card large">
+                <div class="card medium">
                   <h3>Sensors</h3>
                 </div>
                 
-                <div class="card small">
+                <div class="card medium">
                   <h3>Switches</h3>
                 </div>
                 
@@ -125,11 +132,11 @@
                   <h3>GPS</h3>
                 </div>
                 
-                <div class="card large">
+                <div class="card medium">
                   <h3>Meteorological</h3>
                 </div>
                 
-                <div class="card small">
+                <div class="card medium">
                   <h3>Battery Monitors</h3>
                 </div>
                 
@@ -138,14 +145,20 @@
                 </div>
               </section>
         <br>
+        <br>
               <!-- Chart Section -->
               <section class="logs">
+
+                <h1>
+                  Logs and Notifications
+                </h1>
+
                 <canvas id="log-chart"></canvas>
               </section>
             </main>
           </div>
 
-          <script src="script.js"></script>
+          <script src="dashscrrypt.js"></script>
     </body>
         
 </html>

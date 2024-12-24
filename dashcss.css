@@ -3,6 +3,55 @@
     padding: 0;
     font-family: "Nunito", sans-serif
 }
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  background-color: #f0f0f0; 
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  position: relative;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1); 
+}
+
+.theme-toggle .light-mode-icon,
+.theme-toggle .dark-mode-icon {
+  font-size: 20px;
+  color: #333;
+  transition: opacity 0.3s;
+  position: absolute;
+}
+
+.light-mode-icon {
+  opacity: 1;
+}
+
+.dark-mode-icon {
+  opacity: 0;
+}
+
+/* Dark Mode Active State */
+body.dark-mode .theme-toggle {
+  background-color: #333; 
+}
+
+body.dark-mode .theme-toggle .light-mode-icon {
+  opacity: 0;
+}
+
+body.dark-mode .theme-toggle .dark-mode-icon {
+  opacity: 1;
+  color: #fff; 
+}
+
 /* Base Styles */
 body {
     color: #333;
@@ -24,9 +73,23 @@ body {
     flex-direction: column;
 
   }
+
+  body.dark-mode .sidebar {
+    background-color: #444; /* Darker background for dark mode */
+  }
   
-  .sidebar.collapsed {
-    transform: translateX(-250px);
+  body.dark-mode .sidebar ul li a {
+    color: #fff; /* White text for dark mode */
+  }
+
+  
+  body.dark-mode .sidebar h2 {
+    color: #fff; /* White text for dark mode */
+  }
+  
+  body.dark-mode .sidebar ul li a:hover {
+    color: #FFD700; /* Optional: gold text on hover */
+    transform: translateX(10px); /* Slightly shift the link to the right */
   }
   
   .sidebar-header {
@@ -55,34 +118,54 @@ body {
     margin: 0;
   }
   
-  .sidebar ul li a {
-    color: rgb(10, 10, 10);
-    text-decoration: none;
-    display: block;
-    font-size: 18px;
-    transition: background 0.3s ease;
-  }
-  
-  .sidebar ul li a:hover {
-    background: rgba(255, 255, 255, 0.2);
-  }
+/* Navigation Hover Effect */
+.sidebar ul li a {
+  color: rgb(10, 10, 10);
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  color: #1F3A93; /* Navy blue text color */
+  transform: translateX(10px); /* Slightly shift the link to the right */
+}
   
   /* Main Content Styles */
   .main-content {
     flex-grow: 1;
     padding: 20px;
     overflow-y: auto;
+
   }
-  
+
+
+
+body.dark-mode .main-content {
+  background-color: #333; /* Dark background for dark mode */
+  color: #fff;
+}
+
+body.dark-mode .main-content header {
+  background-color: #444; /* Darker background for header */
+  color: #fff;
+}
+
+  .main-content header {
+    background-color: #ffffff; /* Navy blue background */
+    color: #fff; /* White text color */
+    padding: 20px 30px; /* Adjust padding for better spacing */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+
   .main-content header h1 {
     margin: 0 0 10px;
     font-size: 28px;
+    color: black;
   }
-  
-  .main-content header p {
-    margin: 0;
-    color: #666;
-  }
+
   
 .bento-grid {
     display: grid;
@@ -100,11 +183,20 @@ body {
     justify-content: center;
     text-align: center;
   }
+
+  body.dark-mode .card {
+    background-color: #444; /* Dark card background */
+    color: #fff; /* Light text color */
+  }
+  
+  /* Adjust for dark mode cards' hover effect */
+  body.dark-mode .card:hover {
+    background-color: #555;
+  }
   
   .card h3 {
     margin-bottom: 10px;
     font-size: 18px;
-    color: #1F3A93;
   }
   
   .card p {
@@ -133,9 +225,17 @@ body {
     background: white;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 10vh 5vw; /* Adjusts padding based on viewport size */
   }
-  
+  body.dark-mode .logs {
+    background: #444; /* Darker background for logs */
+    color: #fff; /* Light text color */
+  }
+
+  .logs h1{
+    text-align: center;
+  }
+
   /* Responsive adjustments */
   @media (max-width: 768px) {
     .card.small,
